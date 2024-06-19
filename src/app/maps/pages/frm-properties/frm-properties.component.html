@@ -22,14 +22,19 @@
 
             <div class="card">
                <!-- <img src="..." alt="card-img-top"> -->
-               <mini-map></mini-map>
+               <mini-map [LngLat]="house.lngLat"></mini-map>
 
                <div class="card-body">
                   <div class="card-title">{{ house.title }}</div>
                   <p class="card-text">{{ house.description }}</p>
                </div>
-
             </div>
+
+         </div>
+
+         <div class="col-4 mb-2">
+
+            <counter-alone [counter]="30"></counter-alone>
 
          </div>
 
